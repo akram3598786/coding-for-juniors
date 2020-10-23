@@ -1,0 +1,108 @@
+/* ======================= about us zig-zack sections ===================================*/
+body {
+  padding: 0px;
+  margin: 0px;
+}
+#container_about_us {
+  margin-top: 20px;
+}
+#about_para_box {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: row-reverse;
+}
+
+#about_para_box2 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#contact_us_form {
+  background-color: teal;
+}
+
+#contact_us_form {
+  padding: 50px;
+  color: white;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+#conact_us_heading {
+  text-align: center;
+}
+
+/* ================================= Footer CSS =================================*/
+
+#footer {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  opacity: 0.8;
+  /* margin-top: 20px; */
+}
+
+/* #footer::before{
+   content: "";
+   position: absolute;
+   background: url(images/front-img2.jpg) ;
+   z-index: -1;
+   height: 20%;
+   width: 100%;
+} */
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  /* grid-gap: 3fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+  margin: 15px;
+  /* background-color: violet; */
+}
+
+.footer_headings {
+  text-align: start;
+}
+.footer_text {
+  font-size: 16px;
+  text-align: start;
+  opacity: 0.7;
+}
+.footer_quick_links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer_quick_links a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 20px;
+  margin: opx;
+  /* text-align: start; */
+  /* position: relative; */
+}
+.footer_quick_links a:hover {
+  color: blue;
+  /* background-color: tomato; */
+}
+
+.footer_our_programs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer_our_programs a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.footer_our_programs a:hover {
+  color: blue;
+}

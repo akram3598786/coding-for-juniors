@@ -1,0 +1,514 @@
+body {
+  background-color: rgb(red, green, blue);
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+/* ========================================= All CSS within Bootstrap ==================================================== */
+
+/* ========================================= Navbar CSS =============================================== */
+
+#navbar {
+  /* position: sticky; */
+}
+
+#dropdown-menu {
+  background-color: rgb(65, 60, 60);
+}
+#dropdown-menu a {
+  color: white;
+}
+
+#dropdown-menu a:hover {
+  background-color: darkred;
+}
+#login_button {
+  background-color: red;
+  margin: 0px 3px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#login_button:hover {
+  background-color: blue;
+}
+
+#register_button {
+  background-color: red;
+  margin: 0px 3px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#register_button:hover {
+  background-color: blue;
+}
+#search_button {
+  color: white;
+}
+
+#some_sliding_container {
+  /* background-color: darkgreen; */
+  margin-top: 40px;
+  /* height: 400px; */
+}
+.some_sliding_section {
+  background-color: rgb(56, 179, 179);
+  background-image: url("images/neural_background.png");
+  /* background-repeat: no-repeat, repeat; */
+}
+
+#some_slides {
+  padding: 50px;
+}
+
+#card_on_slide {
+  color: black;
+}
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  width: 40px;
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ================================= Navbar CSS ================================= */
+
+.logo1 {
+  size: 100px;
+  height: 48px;
+  width: 45px;
+
+  padding-left: 35px;
+
+  position: sticky;
+}
+
+/* ================================= Home CSS =================================*/
+
+/* =================== Why choose us CSS ========================================*/
+
+.why_choose_us {
+  /* background-color: violet; */
+  margin-top: 50px;
+}
+
+#why_choose_us_h {
+  text-align: center;
+  padding-top: 12px;
+  font-size: 1.6rem;
+}
+
+.why_choose_us_p {
+  text-align: center;
+  padding: 0px 200px;
+}
+
+.why_choose_us_block {
+  display: flex;
+  justify-content: center;
+}
+
+.why_choose_us_box {
+  /* background-color: white; */
+  /* border: 2px solid brown; */
+  margin: 0px 0px;
+  box-shadow: teal 5px;
+}
+
+.why_choose_us_box:hover {
+  color: white;
+  background-color: rgb(82, 82, 199);
+  border: 2px solid white;
+  border-radius: 28px;
+}
+
+.why_choose_us_content {
+  color: black;
+  padding: 6px;
+  margin: 1px 34px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 230px;
+}
+
+.why_choose_us_content:hover {
+  color: white;
+}
+
+/*================================= Image Slider CSS ========================================*/
+
+.slide_images {
+  width: 100%;
+
+  display: block;
+  margin: auto;
+  margin-bottom: 9px;
+}
+
+.image_box {
+  background-color: tomato;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider_img {
+  height: 450px;
+  width: 1200px;
+}
+
+.image_slide_buttons {
+  /* display: block;
+    margin:auto ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  /* border:none;
+    outline:none; */
+
+  border: 3px white;
+  border-radius: 6px blue;
+  height: 30px;
+  background-color: black;
+  color: cornsilk;
+  font-size: 20px;
+  padding: 3px;
+  margin: 5px;
+  cursor: pointer;
+}
+.buttons:hover {
+  background-color: white;
+  color: black;
+}
+
+/*================================= some-heighlights CSS ========================================*/
+
+.some_heighlights {
+  background-color: thistle;
+  margin-top: -10px;
+}
+
+.some_heighlights h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+.some_heighlights_para {
+  /* content: "\270D"; */
+  padding-left: 8px;
+}
+#heighlights {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 12px;
+}
+
+.span_arrow {
+  margin-top: 10px;
+  height: 70px;
+  width: 40px;
+}
+
+/* ================================= our services css =================================*/
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px red;
+  /* flex-flow: wrap; */
+}
+
+.service-box {
+  color: white;
+  border: 2px solid rgb(87, 75, 75);
+  padding: 10px;
+  margin: 1px 34px;
+  border-radius: 28px;
+  background: rgb(87, 75, 75);
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 230px;
+}
+
+#see-details_button {
+  background-color: blue;
+  display: block;
+  margin: auto;
+  width: 120px;
+  margin-top: 4px;
+}
+#see-details_button:hover {
+  background-color: darkblue;
+}
+
+/* ================================= Line for Enroll CSS =================================*/
+
+.section_for_enroll {
+  background: rgb(14, 94, 126);
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#enroll_now_button {
+  margin-top: 20px;
+  width: 180px;
+  font-size: large;
+  border: 2px solid white;
+}
+
+/* ================================= contact-form CSS ================================= */
+
+#contact-form {
+  background-color: darkslategray;
+  height: 600px;
+}
+
+.contact-form-box {
+  /* width: 100%;
+    height: 25%; */
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  color: white;
+  /* border: 5px solid brown; */
+  border-radius: 20px;
+  width: 600px;
+  align-items: center;
+  display: block;
+  margin: auto;
+}
+
+#contact-form-h {
+  padding: 7px 0px;
+}
+
+.own_form {
+  color: white;
+  border: 5px solid brown;
+  padding: 30px;
+  margin: 10px 10px;
+  border-radius: 28px;
+  display: block;
+  padding-bottom: 10px;
+  font-family: "Bree Serif", serif;
+}
+.textarea,
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  /* text-align: center; */
+}
+
+.send-button {
+  display: block;
+  margin: auto;
+  width: 100px;
+  margin-top: 4px;
+}
+
+/* utility classes */
+.centre-text {
+  text-align: center;
+  font-family: "Baloo Da 2", cursive;
+}
+
+.centre-size {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* services-logo css */
+
+.food-logo {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
+.client-logo {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  padding: 45px;
+  padding-bottom: 0px;
+  padding-top: 25px;
+}
+
+/*   =================================headind css ================================= */
+#service-h {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.6rem;
+}
+
+#client-h {
+  text-align: center;
+  margin: 25px;
+  font-size: 1.6rem;
+}
+
+#contact-form-h {
+  text-align: center;
+  margin: 25px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+/* ================================= Reviews Section CSS ================================= */
+
+.reviews {
+  background-color: teal;
+  margin-top: -20px;
+  margin-bottom: 1px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review_para {
+  text-align: center;
+  padding: 0px 200px;
+}
+.reviews_buttons {
+  /* display: block;
+    margin:auto ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+}
+
+.reviews h3 {
+  text-align: center;
+}
+.reviews h4 {
+  margin-top: 0px;
+}
+
+.line {
+  display: block;
+  margin: auto;
+  color: white;
+}
+
+/* ================================= Footer CSS =================================*/
+
+#footer {
+  color: white;
+  background-color: black;
+  padding: 0px 20px;
+  opacity: 0.8;
+  /* margin-top: 20px; */
+}
+
+/* #footer::before{
+   content: "";
+   position: absolute;
+   background: url(images/front-img2.jpg) ;
+   z-index: -1;
+   height: 20%;
+   width: 100%;
+} */
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  /* grid-gap: 3fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+  /* margin: 15px; */
+  /* background-color: violet; */
+}
+
+.footer_headings {
+  text-align: start;
+}
+.footer_text {
+  font-size: 16px;
+  text-align: start;
+  opacity: 0.7;
+}
+
+.footer_follow_us {
+  display: flex;
+}
+
+.follow_us_icons {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+  background-color: white;
+}
+
+.footer_quick_links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer_quick_links a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 20px;
+  margin: opx;
+  /* text-align: start; */
+  /* position: relative; */
+}
+.footer_quick_links a:hover {
+  color: blue;
+  /* background-color: tomato; */
+}
+
+.footer_our_programs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer_our_programs a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.footer_our_programs a:hover {
+  color: blue;
+}

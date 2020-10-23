@@ -1,0 +1,249 @@
+/* Nvbar css */
+.logo{
+   height: 35px; 
+   width: 40px;
+  
+  padding-bottom: 0px;
+  margin-bottom: -20px;
+ 
+}
+
+.logo1{
+    /* background-color: thistle; */
+    height: 28px;
+}
+
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+ 
+    
+    
+    
+}
+.navbar ul{
+    margin-top: -3px;
+    padding-top: 0px;
+    flex-shrink: 20;
+    padding: 0px 0px;
+
+    /* background-color: thistle; */
+}
+
+.navbar ul li a{
+    font-size: 1rem;
+    margin-top: -10px;
+    padding: 0px 6px;
+    font-size: 13px;
+} 
+
+
+
+
+/* Home css */
+
+#home{
+    margin-top: 0px;
+}
+
+#home::before{
+    height: 400px;
+    padding: 0px 200px;
+    
+    
+}
+
+#heading{
+    
+    font-size: 16px;
+    
+    }
+
+#home .heading-text p{
+
+    font-size: 11px;
+    padding: 0px 100px;
+    
+}
+
+    .heading-text{
+        width: 500px;
+        font-size: 16px;
+        padding: 0px 17px;
+    }
+
+
+    .bttn{
+        margin-top: 5px;
+        height: 25px;
+        padding: 0px;
+    }
+
+
+    .search{
+        flex-direction: row;
+    }
+    .search-bar{
+        margin-top: 5px;
+        width: 150px;
+        height: 11px;
+        flex-direction: row;
+    }
+    
+    .search-button{
+        margin-top: 5px;
+        height: 20px;
+        width: 80px;
+    }
+
+.callus-heading{
+    
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 0px 2px;
+    
+    
+    }
+
+ .call-details input{
+
+        justify-content: flex-start;
+        margin-bottom: 0px;
+        width: 150px;
+        }
+
+/* Services css */
+
+.services{
+    
+    flex-direction: column;
+
+}
+
+.service-box{
+    
+    padding: 20px;
+    margin: 1px 34px;
+    border-radius: 28px;
+    background: #A52A2A;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    
+       
+   }
+
+   .centre-text{
+      font-size: 21px;
+   }
+
+   .centre-size{
+    font-size: 29px;
+
+   }
+
+
+   .food-logo{
+       width: 90px;
+       height: 90px;
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+/* Haay code */
+/* Navigation */
+/* #navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+/* Home section */
+/* #home{
+    height: 370px; 
+    padding: 3px 28px;
+}
+
+#home::before{
+    height: 480px; 
+}
+
+#home p{
+    font-size: 13px;
+} */
+
+/* Services section  */
+/* #services{
+    flex-direction: column;
+}
+
+#service-box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+} */
+
+/* Clients section */
+/* #clients{
+    flex-wrap: wrap;
+}
+
+#clients-logo{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+} */
+
+/* Contact us section */
+/* .contact-form-box{
+    width:80%;
+} */
+/* Footer */
+
+/* Utility classes */
+/* .centre{
+    font-size:26px;
+}
+.bttn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+.search-button{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+.send-button{
+    font-size: 13px;
+    padding: 4px 8px;
+} */ */

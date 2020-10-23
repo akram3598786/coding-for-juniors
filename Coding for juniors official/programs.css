@@ -1,0 +1,11 @@
+.service-box {
+  background-color: brown;
+}
+.container {
+  background-color: cornflowerblue;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+#contact_us_form {
+  margin-bottom: 20px;
+}
