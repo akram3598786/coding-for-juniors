@@ -55,6 +55,10 @@ html {
   color: white;
 }
 
+
+/* ================================================= Some Sliding CSS ======================================== */
+
+
 #some_sliding_container {
   /* background-color: darkgreen; */
   margin-top: 40px;
@@ -69,6 +73,10 @@ html {
 #some_slides {
   padding: 50px;
 }
+
+
+/* ================================================= Cards on Some Sliding CSS ======================================== */
+
 
 #card_on_slide {
   color: black;
@@ -92,6 +100,13 @@ html {
     transform: scale(1);
   }
 }
+
+
+
+
+/* ================================================= CSS without Bootstrap ================================================= */
+
+
 /* ================================= Navbar CSS ================================= */
 
 .logo1 {
@@ -108,103 +123,28 @@ html {
 
 /* =================== Why choose us CSS ========================================*/
 
-.why_choose_us {
-  /* background-color: violet; */
-  margin-top: 50px;
-}
 
 #why_choose_us_h {
   text-align: center;
   padding-top: 12px;
   font-size: 1.6rem;
+  margin-top: 50px;
 }
 
-.why_choose_us_p {
+#why_choose_us_p {
   text-align: center;
-  padding: 0px 200px;
+  /* padding: 0px 200px; */
 }
 
-.why_choose_us_block {
-  display: flex;
-  justify-content: center;
-}
-
-.why_choose_us_box {
-  /* background-color: white; */
-  /* border: 2px solid brown; */
-  margin: 0px 0px;
-  box-shadow: teal 5px;
-}
-
-.why_choose_us_box:hover {
+#why_choose_us_box:hover {
   color: white;
   background-color: rgb(82, 82, 199);
   border: 2px solid white;
   border-radius: 28px;
 }
 
-.why_choose_us_content {
-  color: black;
-  padding: 6px;
-  margin: 1px 34px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  width: 230px;
-}
 
-.why_choose_us_content:hover {
-  color: white;
-}
 
-/*================================= Image Slider CSS ========================================*/
-
-.slide_images {
-  width: 100%;
-
-  display: block;
-  margin: auto;
-  margin-bottom: 9px;
-}
-
-.image_box {
-  background-color: tomato;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider_img {
-  height: 450px;
-  width: 1200px;
-}
-
-.image_slide_buttons {
-  /* display: block;
-    margin:auto ; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.buttons {
-  /* border:none;
-    outline:none; */
-
-  border: 3px white;
-  border-radius: 6px blue;
-  height: 30px;
-  background-color: black;
-  color: cornsilk;
-  font-size: 20px;
-  padding: 3px;
-  margin: 5px;
-  cursor: pointer;
-}
-.buttons:hover {
-  background-color: white;
-  color: black;
-}
 
 /*================================= some-heighlights CSS ========================================*/
 
@@ -285,62 +225,9 @@ html {
   border: 2px solid white;
 }
 
-/* ================================= contact-form CSS ================================= */
 
-#contact-form {
-  background-color: darkslategray;
-  height: 600px;
-}
 
-.contact-form-box {
-  /* width: 100%;
-    height: 25%; */
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-
-  color: white;
-  /* border: 5px solid brown; */
-  border-radius: 20px;
-  width: 600px;
-  align-items: center;
-  display: block;
-  margin: auto;
-}
-
-#contact-form-h {
-  padding: 7px 0px;
-}
-
-.own_form {
-  color: white;
-  border: 5px solid brown;
-  padding: 30px;
-  margin: 10px 10px;
-  border-radius: 28px;
-  display: block;
-  padding-bottom: 10px;
-  font-family: "Bree Serif", serif;
-}
-.textarea,
-input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 380px;
-  /* text-align: center; */
-}
-
-.send-button {
-  display: block;
-  margin: auto;
-  width: 100px;
-  margin-top: 4px;
-}
-
-/* utility classes */
+/*=========== utility classes =========== */
 .centre-text {
   text-align: center;
   font-family: "Baloo Da 2", cursive;
@@ -404,7 +291,7 @@ input {
 
 .review_para {
   text-align: center;
-  padding: 0px 200px;
+  /* padding: 0px 200px; */
 }
 .reviews_buttons {
   /* display: block;
@@ -438,14 +325,6 @@ input {
   /* margin-top: 20px; */
 }
 
-/* #footer::before{
-   content: "";
-   position: absolute;
-   background: url(images/front-img2.jpg) ;
-   z-index: -1;
-   height: 20%;
-   width: 100%;
-} */
 
 .footer_grid {
   display: grid;
