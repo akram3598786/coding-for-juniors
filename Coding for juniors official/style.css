@@ -187,7 +187,7 @@ html {
   color: white;
   border: 2px solid rgb(87, 75, 75);
   padding: 10px;
-  
+  margin: 1px 34px;
   border-radius: 28px;
   background: rgb(87, 75, 75);
   margin-bottom: 20px;
@@ -279,40 +279,46 @@ html {
 
 /* ================================= Reviews Section CSS ================================= */
 
-.reviews {
-  background-color: teal;
-  margin-top: -20px;
-  margin-bottom: 1px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.slider_area{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: relative;
+ 
+
+
+}
+.review_heading{
+  color:white;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.review_para {
-  text-align: center;
-  /* padding: 0px 200px; */
-}
-.reviews_buttons {
-  /* display: block;
-    margin:auto ; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 3px;
-}
 
-.reviews h3 {
-  text-align: center;
-}
-.reviews h4 {
+.carousel-caption{
+  position: static;
   margin-top: 0px;
+ 
+}
+.review_items h5{
+  position: static;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  
 }
 
-.line {
-  display: block;
-  margin: auto;
-  color: white;
+.review_items p{
+  margin-top: 50px;
+  padding-top: 50px;
+
+}
+
+#review_text{
+  color:white;
+}
+.review_items{
+  padding: 50px;
+  margin-top:90px ;
 }
 
 /* ================================= Footer CSS =================================*/
