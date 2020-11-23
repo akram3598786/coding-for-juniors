@@ -149,13 +149,15 @@ html {
 /*================================= some-heighlights CSS ========================================*/
 
 .some_heighlights {
-  background-color: thistle;
-  margin-top: -10px;
+  /* background-color: rgba(5, 29, 65, 0.918); */
+  margin-top: 10px;
+  color: white  ;   
 }
 
 .some_heighlights h2 {
   text-align: center;
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  display: inline-block;
 }
 .some_heighlights_para {
   /* content: "\270D"; */
@@ -164,14 +166,29 @@ html {
 #heighlights {
   display: flex;
   justify-content: space-evenly;
-  padding-left: 12px;
+  padding-left: 12px;   
 }
 
-.span_arrow {
-  margin-top: 10px;
-  height: 70px;
-  width: 40px;
+.heighlight_img{
+  height: 400px;
+  
+  
 }
+
+@media (max-width : 1000px) {
+  .heighlight_img{
+    display: none;
+  }
+
+  #heighlights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 
 /* ================================= our services css =================================*/
 
@@ -227,6 +244,7 @@ html {
 
 
 
+
 /*=========== utility classes =========== */
 .centre-text {
   text-align: center;
@@ -247,15 +265,7 @@ html {
   margin: auto;
 }
 
-.client-logo {
-  display: block;
-  width: 70px;
-  height: 70px;
-  margin: auto;
-  padding: 45px;
-  padding-bottom: 0px;
-  padding-top: 25px;
-}
+
 
 /*   =================================headind css ================================= */
 #service-h {

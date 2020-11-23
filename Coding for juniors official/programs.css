@@ -1,6 +1,17 @@
 .service-box {
   background-color: brown;
 }
+
+#program_enroll_btn{
+  color: yellow;
+
+}
+#program_enroll_btn:hover{
+  color: white;
+  font-size: 15px;
+
+
+}
 .container {
   background-color: rgb(60, 67, 82);
   margin-top: 40px;
@@ -8,11 +19,11 @@
   border-radius: 20px;
 }
 
+
+#contact_us_form {
+  margin-bottom: 20px;
+}
 #programs-h{
   color: white;
   font-size: 40px;
 }
-#contact_us_form {
-  margin-bottom: 20px;
-}
-

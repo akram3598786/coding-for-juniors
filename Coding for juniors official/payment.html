@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pricing.css">
+  <link rel="stylesheet" href="payment.css">
   <link rel="stylesheet" href="js.js">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" media="screen and (max-width: 1170px )" href="phone.css">
@@ -37,15 +37,10 @@
 
 <body>
 
-  <!-- ======================= NAVBAR HTML ======================= -->
+     <!-- ======================= NAVBAR HTML ======================= -->
 
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" id="navbar">
-    <!-- <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-        Bootstrap
-      </a>
-    </nav> -->
+  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -272,182 +267,226 @@
 
 
 
-  <!-- ======================= HOME HTML ======================= -->
+  <!--======================================= Biling section HTML ============================== -->
+  
+  <section class="pricing_section">
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="/images/logo2.png" alt="logo loading" width="72"
+          height="72">
+        <h2>Checkout form</h2>
+        <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group
+          has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      </div>
 
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/program-slide1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">-$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Billing address</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Country</label>
+                <select class="custom-select d-block w-100" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">State</label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Save this information for next time</label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked=""
+                  required="">
+                <label class="custom-control-label" for="credit">Credit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="debit">Debit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+          </form>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="images/program-slide2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/program-slide3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2017-2020 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+  </section>
 
 
-  <!--========================== Our Pricing section HTML =========================  -->
-
-
-  <!-- Pricing HTML -->
-
-  <!-- row-1 HTML -->
-
-  <div class="container pricing-section">
-
-    <div class="card-deck mb-3 text-center">
-
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <img src="images/c_icon.png" alt="Our Services" class="food-logo">
-          <h4 class="my-0 font-weight-normal">C Language</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">Rs.12345 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Live Intractive sessions</li>
-            <li>Self Paced</li>
-            <li>All time support</li>
-            <li>Projrct complition</li>
-            <li>Certification</li>
-          </ul>
-          <a href="payment.html"> <button  type="button" class="btn btn-lg btn-block btn-primary">Enroll Now</button></a>
-        </div>
-      </div>
-
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <img src="images/python_icon.png" alt="Our Services" class="food-logo">
-          <h4 class="my-0 font-weight-normal">Python Language</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">Rs.12345 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Live Intractive sessions</li>
-            <li>Self Paced</li>
-            <li>All time support</li>
-            <li>Projrct complition</li>
-            <li>Certification</li>
-          </ul>
-          <a href="payment.html"> <button  type="button" class="btn btn-lg btn-block btn-primary">Enroll Now</button></a>
-        </div>
-      </div>
-
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <img src="images/java_icon.png" alt="Our Services" class="food-logo">
-          <h4 class="my-0 font-weight-normal">Java Language</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">Rs.12345 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Live Intractive sessions</li>
-            <li>Self Paced</li>
-            <li>All time support</li>
-            <li>Projrct complition</li>
-            <li>Certification</li>
-          </ul>
-          <a href="payment.html"> <button  type="button" class="btn btn-lg btn-block btn-primary">Enroll Now</button></a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-   <!-- row-2 HTML -->
-
-   <div class="container pricing-section">
-
-    <div class="card-deck mb-3 text-center">
-
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <img src="images/html_icon.png" alt="Our Services" class="food-logo">
-          <h4 class="my-0 font-weight-normal">Web Development</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">Rs.12345 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Live Intractive sessions</li>
-            <li>Self Paced</li>
-            <li>All time support</li>
-            <li>Projrct complition</li>
-            <li>Certification</li>
-          </ul>
-          <a href="payment.html"> <button  type="button" class="btn btn-lg btn-block btn-primary">Enroll Now</button></a>
-        </div>
-      </div>
-
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <img src="images/c++_icon.png" alt="Our Services" class="food-logo">
-          <h4 class="my-0 font-weight-normal">C++ Language</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">Rs.12345 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Live Intractive sessions</li>
-            <li>Self Paced</li>
-            <li>All time support</li>
-            <li>Projrct complition</li>
-            <li>Certification</li>
-          </ul>
-          <a href="payment.html"> <button  type="button" class="btn btn-lg btn-block btn-primary">Enroll Now</button></a>
-        </div>
-      </div>
-
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <img src="images/javascript_icon.png" alt="Our Services" class="food-logo">
-          <h4 class="my-0 font-weight-normal">Android Development</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">Rs.12345 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Live Intractive sessions</li>
-            <li>Self Paced</li>
-            <li>All time support</li>
-            <li>Projrct complition</li>
-            <li>Certification</li>
-          </ul>
-          <a href="payment.html"> <button  type="button" class="btn btn-lg btn-block btn-primary">Enroll Now</button></a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
- 
-  <!-- ================================================= FOOTER HTML ========================================================== -->
-  <footer class="centre-size" id="footer">
+   <!-- ================================================= FOOTER HTML ========================================================== -->
+   <footer class="centre-size" id="footer">
     <div class="footer_grid">
 
         <div class="footer_para">

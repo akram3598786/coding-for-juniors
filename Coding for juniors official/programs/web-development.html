@@ -4,15 +4,251 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="/about.css">
+    <link rel="stylesheet" href="/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>programs/web-development</title>
   </head>
   <body>
-    <h1>web development</h1>
 
+ <!-- ======================= NAVBAR HTML ======================= -->
+
+ <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" id="navbar">
+  <!-- <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+      Bootstrap
+    </a>
+  </nav> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- <div id="logo " >
+          
+      <img src="images/logo2.png" class="logo1" alt="Image loading">
+      <h1>Akky OnlineSale</h1> 
+  </div> -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about.html">About Us</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Programs
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown-menu">
+          <a class="dropdown-item" href="c.html">C</a>
+          <a class="dropdown-item" href="python.html">Python</a>
+          <a class="dropdown-item" href="c++.html">C++</a>
+          <a class="dropdown-item" href="java.html">Java</a>
+          <a class="dropdown-item" href="web-development.html">Web Development</a>
+          <a class="dropdown-item" href="android.html">Android Development</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/programs.html">We Serve Eveything in Coding</a>
+        </div>
+
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blogs.html">Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">See Demos</a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="search" id="search_button">Search</button>
+
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="button" id="login_button" data-toggle="modal"
+        data-target="#loginModal" class="login-register-btn">Login</button>
+
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="button" id="register_button" data-toggle="modal"
+        data-target="#signupModal">Register</button>
+
+    </form>
+  </div>
+</nav>
+
+<!-- =======================modals HTML =======================-->
+
+
+<!--======== Signup Modal ========-->
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Get Registered with Coding for juniors </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Delhi</option>
+                <option>Haryana</option>
+                <option>Uttar Pradesh</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                are you robot?
+              </label>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Select Your Interest </label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Select</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>Web Development</option>
+            <option>Android Development</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+    <div div class="form-group">
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= Login Modal ========= -->
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Get Login with Coding for juniors</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0"> Robot?</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                    checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    No
+                  </label>
+                </div>
+
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Remember me
+            </label>
+          </div>
+      </div>
+
+
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+    <h1 class="centre-text">web development</h1>
+    <h2 class="feature_section_heading"><span class="badge badge-pill badge-warning  ">We will update it soon</span></h2>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
