@@ -93,6 +93,9 @@ text-align: center;
 .featurette-heading{
   margin-top: -30px;
 }
+.about_para_img{
+  margin-bottom: 40px;
+}
 /*================================= Contact Form CSS============================= */
 
 #contact_us_form {
