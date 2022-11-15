@@ -25,4 +25,4 @@ It's a educational website for providing the details of course and curriculum to
  # Payment Page
  ![payment](https://user-images.githubusercontent.com/57341544/201915591-b8fa09b1-0de7-4f04-81ee-bf7fb7a95bca.png)
 
-<h3 text-align ="center">Thank You</h3?
+<h2 align= "center">Thank You</h2?
