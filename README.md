@@ -1,5 +1,5 @@
 # Coding-for-juniors
-Its my first solo-project when I started to learn web development technologies.
+Its my first solo-project when I started to learn web development technologies. Compltete UI designed and devloped by me.
 It's a educational website for providing the details of course and curriculum to aspiring school students for programming. About us and check prices pages. 
 
 # Built with
@@ -25,4 +25,4 @@ It's a educational website for providing the details of course and curriculum to
  # Payment Page
  ![payment](https://user-images.githubusercontent.com/57341544/201915591-b8fa09b1-0de7-4f04-81ee-bf7fb7a95bca.png)
 
-<h3 text-align-"center">Thank You</h3?
+<h3 text-align ="center">Thank You</h3?
